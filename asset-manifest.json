@@ -1,13 +1,16 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.13c21781.css",
-    "main.js": "/portfolio/static/js/main.54fea87f.js",
+    "main.js": "/portfolio/static/js/main.58219a55.js",
+    "static/media/LeetCode_logo_black.png": "/portfolio/static/media/LeetCode_logo_black.c79f333b12595d3eec8f.png",
+    "static/media/Octicons-mark-github.svg.png": "/portfolio/static/media/Octicons-mark-github.svg.7dcfdf0ee79a1ee74e80.png",
+    "static/media/Pranav_Profile.jpg": "/portfolio/static/media/Pranav_Profile.5b3fa4ae754e1d561ec9.jpg",
     "index.html": "/portfolio/index.html",
     "main.13c21781.css.map": "/portfolio/static/css/main.13c21781.css.map",
-    "main.54fea87f.js.map": "/portfolio/static/js/main.54fea87f.js.map"
+    "main.58219a55.js.map": "/portfolio/static/js/main.58219a55.js.map"
   },
   "entrypoints": [
     "static/css/main.13c21781.css",
-    "static/js/main.54fea87f.js"
+    "static/js/main.58219a55.js"
   ]
 }
