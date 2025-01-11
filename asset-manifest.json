@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.cda12813.css",
-    "main.js": "/portfolio/static/js/main.dd2cd2d8.js",
+    "main.css": "/portfolio/static/css/main.d9d43a91.css",
+    "main.js": "/portfolio/static/js/main.4839af2b.js",
     "static/media/LeetCode_logo_black.png": "/portfolio/static/media/LeetCode_logo_black.c79f333b12595d3eec8f.png",
     "static/media/Octicons-mark-github.svg.png": "/portfolio/static/media/Octicons-mark-github.svg.7dcfdf0ee79a1ee74e80.png",
     "static/media/Pranav_Profile.jpg": "/portfolio/static/media/Pranav_Profile.5b3fa4ae754e1d561ec9.jpg",
+    "static/media/gmail.png": "/portfolio/static/media/gmail.a2f2146f929409405da0.png",
     "index.html": "/portfolio/index.html",
-    "main.cda12813.css.map": "/portfolio/static/css/main.cda12813.css.map",
-    "main.dd2cd2d8.js.map": "/portfolio/static/js/main.dd2cd2d8.js.map"
+    "main.d9d43a91.css.map": "/portfolio/static/css/main.d9d43a91.css.map",
+    "main.4839af2b.js.map": "/portfolio/static/js/main.4839af2b.js.map"
   },
   "entrypoints": [
-    "static/css/main.cda12813.css",
-    "static/js/main.dd2cd2d8.js"
+    "static/css/main.d9d43a91.css",
+    "static/js/main.4839af2b.js"
   ]
 }
