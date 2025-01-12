@@ -1,96 +1,109 @@
 import React from 'react';
+import { BackgroundGradientAnimation } from './ui/BackgroundGradientAnimation'; // Make sure to import the component
+
+// Import images
+import profileImage from './assets/images/Pranav_Profile.jpg';
+import githubIcon from './assets/images/Octicons-mark-github.svg.png';
+import hackerRankIcon from './assets/images/HackerRank_Icon-1000px.png';
+import leetCodeIcon from './assets/images/LeetCode_logo_black.png';
+import emailIcon from './assets/images/gmail.png';
 
 function App() {
   return (
-    <div className="bg-black text-white min-h-screen flex flex-col items-center justify-center px-8">
-      {/* Hero Section */}
-      <div className="flex flex-col lg:flex-row items-center gap-10 max-w-6xl w-full">
-        {/* Left Side */}
-        <div className="text-center lg:text-left flex-1 animate-slidein300">
-          <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-pink-500 via-yellow-500 to-blue-500 bg-clip-text text-transparent animate-text">
+    <BackgroundGradientAnimation>
+      <div className="text-white min-h-screen flex flex-col items-center justify-center px-4 relative z-10">
+        {/* Profile Section */}
+        <div className="flex flex-col items-center justify-center">
+          <div className="rounded-full w-40 h-40 p-1 animate-borderPulse bg-gradient-to-r from-transparent via-transparent to-transparent border-4">
+            <img
+              src={profileImage}
+              alt="Profile"
+              className="rounded-full w-full h-full object-cover shadow-md"
+            />
+          </div>
+          <h1 className="text-2xl font-bold bg-gradient-to-r from-pink-500 via-yellow-500 to-blue-500 bg-clip-text text-transparent mt-4 text-center">
             Pranav Sanjeev Gaonkar
           </h1>
-          <p className="text-lg text-gray-400 mb-6 animate-slidein500">
-            Hello, I'm Pranav S Gaonkar, currently pursuing a Bachelor of Engineering in Computer Science at SDM College of Engineering and Technology, Dharwad. With a strong foundation in software development and a passion for technology.
+          <p className="text-sm font-bold text-black mt-2 text-center">
+              Bachelor of Engineering in Computer Science | SDM College of Engineering and Technology
           </p>
+
         </div>
 
-        {/* Right Side */}
-        <div className="flex-1 flex justify-center animate-slidein700">
-          <img
-            src="/Pranav_Profile.jpg" // Replace with your profile image file name
-            alt="Profile"
-            className="rounded-full w-64 h-64 object-cover shadow-lg"
-          />
-        </div>
-      </div>
-
-      {/* Links Section */}
-      <div className="mt-12 flex flex-col md:flex-row gap-8 items-center">
-        {/* GitHub */}
-        <div className="text-center p-4 w-48">
+        {/* Links Section */}
+        <div className="mt-8 flex flex-col gap-4 w-full max-w-sm">
+          {/* GitHub */}
           <a
             href="https://github.com/pranavgaonkar12"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col justify-center items-center"
+            className="relative group flex items-center gap-3 px-4 py-3 bg-gray-800 rounded-lg shadow overflow-hidden"
           >
-            <div className="flex justify-center items-center overflow-hidden rounded-md h-32 w-32 mx-auto">
-              <img
-                className="object-contain w-full h-full hover:scale-125 transition-transform duration-500"
-                src="/Octicons-mark-github.svg.png" // Replace with your GitHub icon file
-                alt="GitHub"
-              />
-            </div>
-            <h3 className="text-2xl py-4 text-gray-300 hover:text-white">
-              GitHub
-            </h3>
+            <div
+              className="absolute -inset-1 bg-gradient-to-r from-red-600 to-violet-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"
+            ></div>
+            <img
+              src={githubIcon}
+              alt="GitHub"
+              className="relative w-8 h-8 object-contain"
+            />
+            <span className="relative text-lg">GitHub</span>
           </a>
-        </div>
 
-        {/* HackerRank */}
-        <div className="text-center p-4 w-48">
+          {/* HackerRank */}
           <a
             href="https://www.hackerrank.com/profile/PranavSg67"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col justify-center items-center"
+            className="relative group flex items-center gap-3 px-4 py-3 bg-gray-800 rounded-lg shadow overflow-hidden"
           >
-            <div className="flex justify-center items-center overflow-hidden rounded-md h-32 w-32 mx-auto">
-              <img
-                className="object-contain w-full h-full hover:scale-125 transition-transform duration-500"
-                src="/HackerRank_Icon-1000px.png" // Replace with your HackerRank icon file
-                alt="HackerRank"
-              />
-            </div>
-            <h3 className="text-2xl py-4 text-gray-300 hover:text-white">
-              HackerRank
-            </h3>
+            <div
+              className="absolute -inset-1 bg-gradient-to-r from-green-500 to-blue-500 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"
+            ></div>
+            <img
+              src={hackerRankIcon}
+              alt="HackerRank"
+              className="relative w-8 h-8 object-contain"
+            />
+            <span className="relative text-lg">HackerRank</span>
           </a>
-        </div>
 
-        {/* LeetCode */}
-        <div className="text-center p-4 w-48">
+          {/* LeetCode */}
           <a
             href="https://leetcode.com/u/pranavgaonkar18112003/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col justify-center items-center"
+            className="relative group flex items-center gap-3 px-4 py-3 bg-gray-800 rounded-lg shadow overflow-hidden"
           >
-            <div className="flex justify-center items-center overflow-hidden rounded-md h-32 w-32 mx-auto">
-              <img
-                className="object-contain w-full h-full hover:scale-125 transition-transform duration-500"
-                src="/LeetCode_logo_black.png" // Replace with your LeetCode icon file
-                alt="LeetCode"
-              />
-            </div>
-            <h3 className="text-2xl py-4 text-gray-300 hover:text-white">
-              LeetCode
-            </h3>
+            <div
+              className="absolute -inset-1 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"
+            ></div>
+            <img
+              src={leetCodeIcon}
+              alt="LeetCode"
+              className="relative w-8 h-8 object-contain"
+            />
+            <span className="relative text-lg">LeetCode</span>
+          </a>
+
+          {/* Email */}
+          <a
+            href="mailto:pg2601236@gmail.com"
+            className="relative group flex items-center gap-3 px-4 py-3 bg-gray-800 rounded-lg shadow overflow-hidden"
+          >
+            <div
+              className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"
+            ></div>
+            <img
+              src={emailIcon}
+              alt="emailIcon"
+              className="relative w-8 h-8 object-contain"
+            />
+            <span className="relative text-lg">Email</span>
           </a>
         </div>
       </div>
-    </div>
+    </BackgroundGradientAnimation>
   );
 }
 
